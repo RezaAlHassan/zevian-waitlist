@@ -10,7 +10,11 @@ export default function Navbar() {
         >
             <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
                 <div>
-                    <img src="/Tramsparent-FullLogo-Teal.png" height="105px" width="105px" />
+                    <img 
+                        src="/Tramsparent-FullLogo-Teal.png" 
+                        height="105px" 
+                        width="105px" 
+                    />   
                 </div>
                 <a
                     href="#waitlist"
