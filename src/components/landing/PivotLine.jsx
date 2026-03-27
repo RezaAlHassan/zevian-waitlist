@@ -10,8 +10,7 @@ export default function PivotLine() {
                 transition={{ duration: 0.6 }}
                 className="text-center text-2xl md:text-3xl lg:text-4xl font-light text-foreground/70 max-w-3xl mx-auto leading-snug tracking-tight"
             >
-                "There's a better way to know if your team is actually performing."
-            </motion.p>
+Performance, tracked continuously. Not reviewed quarterly.            </motion.p>
         </section>
     );
 }

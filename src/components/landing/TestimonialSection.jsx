@@ -13,7 +13,7 @@ const testimonials = [
         initials: "KS",
         role: "Founder",
         firm: "VC Funded Startup",
-        quote: "It would take a big headache away from me"
+        quote: "That would just make our lives easier and help us focus on other areas."
     },
     {
         initials: "FL",

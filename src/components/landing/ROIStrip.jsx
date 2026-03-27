@@ -25,6 +25,9 @@ export default function ROIStrip() {
                         </motion.div>
                     ))}
                 </div>
+                <p className="text-center text-xs text-muted-foreground/50 mt-10 max-w-lg mx-auto">
+                    Based on $70K avg salary, 5 managers, 8% annual churn, 60 hrs review time per cycle. Adjust for your team size.
+                </p>
             </div>
         </section>
     );

@@ -4,7 +4,6 @@ import ProblemSection from '../components/landing/ProblemSection';
 import PivotLine from '../components/landing/PivotLine';
 import SolutionSection from '../components/landing/SolutionSection';
 import ROIStrip from '../components/landing/ROIStrip';
-import ProblemsSection from '../components/landing/ProblemsSection';
 import TestimonialSection from '../components/landing/TestimonialSection';
 
 import CTASection from '../components/landing/CTASection';
@@ -24,10 +23,6 @@ export default function Landing() {
                     <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
                 </div>
                 <SolutionSection />
-                <div className="max-w-4xl mx-auto">
-                    <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-                </div>
-                <ProblemsSection />
                 <div className="max-w-4xl mx-auto">
                     <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
                 </div>
