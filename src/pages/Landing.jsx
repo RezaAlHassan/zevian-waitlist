@@ -32,8 +32,13 @@ export default function Landing() {
                 <div id="waitlist">
                     <CTASection />
                 </div>
-                <footer className="py-12 text-center">
+                <footer className="py-12 text-center space-y-3">
                     <p className="text-xs text-muted-foreground">© 2026 Zevian. All rights reserved.</p>
+                    <div className="flex items-center justify-center gap-4">
+                        <a href="/privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
+                        <span className="text-xs text-muted-foreground/40">·</span>
+                        <a href="/terms" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Terms and Conditions</a>
+                    </div>
                 </footer>
             </main>
         </div>
