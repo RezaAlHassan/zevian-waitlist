@@ -17,10 +17,10 @@ export default function Navbar() {
                     />   
                 </div>
                 <a
-                    href="#waitlist"
+                    href="#cta"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                    Join Waitlist
+                    Get started
                 </a>
             </div>
         </motion.nav>

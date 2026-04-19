@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "50%", label: "less time on performance reviews per cycle" },
-    { value: "60–90", label: "days earlier underperformer detection" },
-    { value: "6–23×", label: "ROI for a 30-person team" },
+    { value: "$15–20K", label: "cost of a bad sales hire by the time you confirm it" },
+    { value: "4–6 wks", label: "to see the pattern with Zevian vs 3–6 months without" },
+    { value: "40–60×", label: "ROI vs the cost of one failed ramp" },
 ];
 
 export default function ROIStrip() {
@@ -25,8 +25,8 @@ export default function ROIStrip() {
                         </motion.div>
                     ))}
                 </div>
-                <p className="text-center text-xs text-muted-foreground/50 mt-10 max-w-lg mx-auto">
-                    Based on $70K avg salary, 5 managers, 8% annual churn, 60 hrs review time per cycle. Adjust for your team size.
+                <p className="text-center text-xs text-muted-foreground/40 mt-10 max-w-md mx-auto">
+                    Based on $70K avg salary, 30% annual rep turnover, 4.5 months average discovery window.
                 </p>
             </div>
         </section>

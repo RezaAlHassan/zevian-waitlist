@@ -10,7 +10,7 @@ export default function PivotLine() {
                 transition={{ duration: 0.6 }}
                 className="text-center text-2xl md:text-3xl lg:text-4xl font-light text-foreground/70 max-w-3xl mx-auto leading-snug tracking-tight"
             >
-Performance, tracked continuously. Not reviewed quarterly.            </motion.p>
+You don't need more data from your dialler. You need to know if your rep is actually getting better.</motion.p>
         </section>
     );
 }

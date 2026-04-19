@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const paragraphs = [
-    "Remote teams are hard to read. You think you know who's performing. You probably don't, not really. You're working off signals that were never designed to measure work.",
-    "Performance reviews become this uncomfortable exercise where you're filling in blanks with whatever you can remember. It feels off because it is off.",
-    "A quiet underperformer is expensive. Not in a dramatic way. Just a slow, steady drain you don't notice until something finally breaks.",
+    "You hired someone. They seem fine. Dials are okay. Sit rate is passable. But your gut says something isn't clicking.",
+    "The problem is you have no way to confirm it. Not yet. So you wait. Month two. Month three. Month four. By then you've paid the salary, burned the onboarding time, and handed them a pipeline they didn't close properly.",
+    "The average bad sales hire costs $15 to 20K by the time you have enough evidence to act. Most of that cost isn't the hire. It's the wait.",
 ];
 
 

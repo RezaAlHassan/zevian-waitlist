@@ -2,19 +2,19 @@ import { motion } from 'framer-motion';
 
 const items = [
     {
-        problem: "Invisible underperformers",
-        problemDetail: "One bad hire in a remote team costs you $40,000 a year and you usually don't see it coming until it's too late.",
-        solution: "Zevian scores every report so performance trends surface in days, not quarters."
+        problem: "The wait costs you",
+        problemDetail: "A bad sales hire costs $15–20K — not the salary alone, but the onboarding time and the pipeline they burned. Most founders confirm it at month four or five.",
+        solution: "Zevian scores your reps from week one. You see the pattern by week four."
     },
     {
-        problem: "Biased reviews",
-        problemDetail: "Feedback written from memory and gut feel isn't fair to your team and isn't defensible to anyone else.",
-        solution: "AI evaluates against your own criteria every single cycle, with consistent reasoning every time."
+        problem: "Dials don't tell you enough",
+        problemDetail: "Your dialler tells you what happened. It has no opinion on whether your rep's pitch is improving or if they're handling objections better than last week.",
+        solution: "Zevian scores the qualitative layer — the part your dialler can't see."
     },
     {
-        problem: "Wasted review time",
-        problemDetail: "Managers spend 40 to 80 hours per review cycle on evaluation work that AI can do in seconds.",
-        solution: "You review the score and the reasoning. The heavy lifting is already done."
+        problem: "Gut feel isn't evidence",
+        problemDetail: "When you need to act on a struggling rep, you need documentation. A feeling at month four isn't enough. A six-week scoring trail is.",
+        solution: "Every score is logged against criteria you set. The evidence is already there when you need it."
     },
 ];
 
@@ -30,7 +30,7 @@ export default function ProblemsSection() {
                     className="text-center mb-16"
                 >
                     <p className="text-xs font-semibold text-primary tracking-widest uppercase mb-3">Why Zevian</p>
-                    <h2 className="text-2xl md:text-3xl font-bold text-foreground">The problems it solves.</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground">The gap your dialler leaves.</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

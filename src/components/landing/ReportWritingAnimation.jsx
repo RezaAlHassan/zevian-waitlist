@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const reportLines = [
-    "Completed sprint planning for Q2 roadmap.",
-    "Shipped user auth module, 3 days ahead of schedule.",
-    "Reviewed 4 PRs, unblocked backend team on API migration.",
-    "Drafted proposal for caching layer optimization."
+    "Made 67 dials, booked 4 discovery calls.",
+    "Lost two deals on pricing — didn't handle the objection well.",
+    "Tested a new opener this week, sit rate improved slightly.",
+    "Need help tightening the pitch for mid-market prospects."
 ];
 
 export default function ReportWritingAnimation() {
@@ -51,7 +51,7 @@ export default function ReportWritingAnimation() {
                     <div className="w-3 h-3 rounded-full bg-green-500/60" />
                     <span className="ml-2 text-xs text-muted-foreground font-medium">Weekly Report · Mar 15, 2026</span>
                 </div>
-                <div className="p-5 h-[220px] overflow-hidden space-y-2 text-left">
+                <div className="p-5 h-[300px] overflow-hidden space-y-2 text-left">
                     <AnimatePresence>
                         {visibleLines.map((line, i) => (
                             <motion.div

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const goalText = "Drive efficient lead-to-conversion performance for the sales team. Focus on pipeline quality, speed of follow-up, and consistent communication with prospects.";
+const goalText = "Score reps on pitch quality, objection handling, and follow-up consistency. Weight each criterion based on what matters most for our outbound motion.";
 
 const criteriaItems = [
-    { name: "Pipeline Quality", weight: 40, instruction: "Score based on lead qualification and deal progression" },
-    { name: "Follow-up Speed", weight: 35, instruction: "Evaluate response time and consistency" },
-    { name: "Conversion Rate", weight: 25, instruction: "Measure closed deals against target" },
+    { name: "Pitch Quality", weight: 40, instruction: "Is the value prop clear? Does the rep tailor it to the prospect?" },
+    { name: "Objection Handling", weight: 35, instruction: "How well does the rep address pushback and stay on track?" },
+    { name: "Follow-up Consistency", weight: 25, instruction: "Are follow-ups timely, relevant, and moving the deal forward?" },
 ];
 
 // Phase 0: typing goal text

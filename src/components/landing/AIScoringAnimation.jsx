@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const criteria = [
-    { label: "Delivery Quality", score: 8.7, weight: "40%" },
-    { label: "Communication", score: 7.2, weight: "35%" },
-    { label: "Timeliness", score: 8.0, weight: "25%" },
+    { label: "Pitch Quality", score: 7.8, weight: "40%" },
+    { label: "Objection Handling", score: 5.9, weight: "35%" },
+    { label: "Follow-up Consistency", score: 8.2, weight: "25%" },
 ];
 
 export default function AIScoringAnimation() {
@@ -25,7 +25,7 @@ export default function AIScoringAnimation() {
                 return () => clearTimeout(t);
             } else {
                 const t = setTimeout(() => {
-                    setTotalScore(8.3);
+                    setTotalScore(7.2);
                     setPhase(2);
                 }, 800);
                 return () => clearTimeout(t);
@@ -57,7 +57,7 @@ export default function AIScoringAnimation() {
                         {phase === 0 ? "Analyzing..." : phase === 1 ? "Scoring..." : "Complete"}
                     </span>
                 </div>
-                <div className="p-5 h-[220px] overflow-hidden text-left">
+                <div className="p-5 h-[300px] overflow-hidden text-left">
                     {phase === 0 && (
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -111,17 +111,28 @@ export default function AIScoringAnimation() {
                             </AnimatePresence>
 
                             {totalScore !== null && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    className="mt-4 pt-4 border-t border-border flex items-center justify-between"
-                                >
-                                    <span className="text-sm font-medium text-foreground">Overall Score</span>
-                                    <div className="flex items-center gap-2">
-                                        <span className="text-2xl font-bold text-primary">{totalScore}</span>
-                                        <span className="text-sm text-muted-foreground">/ 10</span>
-                                    </div>
-                                </motion.div>
+                                <>
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="mt-4 pt-4 border-t border-border flex items-center justify-between"
+                                    >
+                                        <span className="text-sm font-medium text-foreground">Overall Score</span>
+                                        <div className="flex items-center gap-2">
+                                            <span className="text-2xl font-bold text-primary">{totalScore}</span>
+                                            <span className="text-sm text-muted-foreground">/ 10</span>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 6 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.3 }}
+                                        className="mt-3 px-3 py-2 rounded-md bg-yellow-500/10 border border-yellow-500/20"
+                                    >
+                                        <p className="text-xs font-semibold text-yellow-500/80 uppercase tracking-widest mb-0.5">Coaching flag</p>
+                                        <p className="text-xs text-muted-foreground leading-relaxed">Objection handling is the weak point. Rep struggles to stay on track after pricing pushback.</p>
+                                    </motion.div>
+                                </>
                             )}
                         </div>
                     )}

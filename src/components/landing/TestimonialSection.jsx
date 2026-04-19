@@ -6,21 +6,20 @@ const testimonials = [
     {
         initials: "UK",
         role: "Product Manager",
-        firm: "200+ Employees Agency",
-        quote: "It would be great addition and would save a lot of time. The employees will also like it because they are being judged based on their own work reports."
+        firm: "200+ Person Outbound Team",
+        quote: "It would save a lot of time. Reps will also like it — they're being judged on their own work, not someone's impression of them."
     },
     {
         initials: "KS",
         role: "Founder",
-        firm: "VC Funded Startup",
+        firm: "VC-Funded B2B Startup",
         quote: "That would just make our lives easier and help us focus on other areas."
     },
     {
-        initials: "FL",
-        role: "Operations Manager",
-        firm: "100+ Employees Tech Firm",
-        quote: "It would take away the humane aspects of assessment",
-        supportingText: "Zevian scores the work. You still know the person"
+        initials: "AK",
+        role: "Founder & B2B Sales Coach",
+        firm: "B2B Outreach Agency, 10+ Years in Sales",
+        quote: "It is incredibly difficult to find a good hire in any industry. It's only after 6 months or more you understand if they are improving — and by that time you've already lost a lot of money"
     }
 ];
 

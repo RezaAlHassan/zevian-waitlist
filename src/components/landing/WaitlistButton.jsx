@@ -28,7 +28,7 @@ export default function WaitlistButton() {
                 className="h-12 px-6 bg-primary text-primary-foreground hover:bg-primary/90 font-medium text-sm whitespace-nowrap w-full sm:w-auto"
             >
                 <span className="flex items-center gap-2">
-                    Join the waitlist <ArrowRight className="w-4 h-4" />
+                    Get started <ArrowRight className="w-4 h-4" />
                 </span>
             </Button>
         </form>

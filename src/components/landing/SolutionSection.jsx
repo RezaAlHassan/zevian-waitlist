@@ -7,19 +7,19 @@ const steps = [
     {
         number: "01",
         label: "You set the criteria.",
-        description: "Define what good work looks like for each role. Quality, speed, communication, whatever matters to you, and how much.",
+        description: "Pitch quality, objection handling, follow-up consistency. Define what good looks like for your team and weight each criterion.",
         animation: "goal"
     },
     {
         number: "02",
-        label: "Your team submits work reports.",
-        description: "Weekly, daily, or on your schedule. They write what they did. That's it.",
+        label: "Your reps submit a weekly report.",
+        description: "What they worked on, what they pitched, what they struggled with. Takes five minutes. No new tools.",
         animation: "report"
     },
     {
         number: "03",
-        label: "AI scores every report automatically.",
-        description: "Against your criteria. With reasoning. You review the result, not the raw content.",
+        label: "AI scores it. You see the pattern.",
+        description: "Every report scored against your criteria, with reasoning. You see who's improving by week three. Not month five.",
         animation: "scoring"
     }
 ];

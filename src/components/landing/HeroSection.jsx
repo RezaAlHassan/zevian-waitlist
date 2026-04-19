@@ -14,10 +14,9 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight"
                 >
-                    One underperformer costs you{' '}
-                    <span className="text-primary">$40,000</span> a year.
+                   You find out a rep is a bad hire at month five.
                     <br />
-                    <span className="text-muted-foreground font-medium">You probably have one right now.</span>
+                    <span className="text-muted-foreground font-medium">Zevian tells you at week four.</span>
                 </motion.h1>
 
                 <motion.p
@@ -26,7 +25,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 >
-                    Zevian gives your remote team a continuous score on every work report so you know who's performing, who's slipping, and you can prove it.
+                    Your reps submit a weekly report. AI scores it. You see who's improving by week four — not month six.
                 </motion.p>
 
                 <motion.div
@@ -36,7 +35,7 @@ export default function HeroSection() {
                     className="mt-10"
                 >
                     <WaitlistButton />
-                    <p className="mt-3 text-xs text-muted-foreground">Free early access</p>
+                    <p className="mt-3 text-xs text-muted-foreground">30 days free. Cancel anytime.</p>
                 </motion.div>
 
                 <motion.div
