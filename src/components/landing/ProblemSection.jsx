@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const paragraphs = [
-    "You hired someone. They seem fine. Dials are okay. Sit rate is passable. But your gut says something isn't clicking.",
-    "The problem is you have no way to confirm it. Not yet. So you wait. Month two. Month three. Month four. By then you've paid the salary, burned the onboarding time, and handed them a pipeline they didn't close properly.",
-    "The average bad sales hire costs $15 to 20K by the time you have enough evidence to act. Most of that cost isn't the hire. It's the wait.",
+    "You hired someone. Activity looks fine. Dials are there. Meetings are passable. But something feels off.",
+    "The problem isn't data. It's that you can't see progress. So you wait. Month two. Month three. Month four.",
+    "By the time you're sure, you've paid the salary, burned onboarding time, and lost pipeline quality. A bad sales hire can cost $15-20K. Most of that cost is the wait.",
 ];
 
 

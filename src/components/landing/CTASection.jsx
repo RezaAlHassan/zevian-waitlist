@@ -12,12 +12,13 @@ export default function CTASection() {
                 className="max-w-xl mx-auto text-center"
             >
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-                    Start finding out by week four.
+                    You need to know who's actually getting better.
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                    30 days free. Know if your reps are improving by week four.
+                    Keep guessing for 3 months - or know in 4 weeks.
                 </p>
                 <WaitlistButton />
+                <p className="mt-3 text-xs text-muted-foreground">30 days free · Cancel anytime</p>
             </motion.div>
         </section>
     );

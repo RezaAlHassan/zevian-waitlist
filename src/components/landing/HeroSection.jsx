@@ -14,9 +14,9 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight"
                 >
-                   You find out a rep is a bad hire at month five.
+                   You don't find bad hires in month five.
                     <br />
-                    <span className="text-muted-foreground font-medium">Zevian tells you at week four.</span>
+                    <span className="text-muted-foreground font-medium">Zevian shows you by week four.</span>
                 </motion.h1>
 
                 <motion.p
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 >
-                    Your reps submit a weekly report. AI scores it. You see who's improving by week four — not month six.
+                    AI-powered performance intelligence for outbound teams. See which reps are actually improving before the cost compounds.
                 </motion.p>
 
                 <motion.div
@@ -35,7 +35,7 @@ export default function HeroSection() {
                     className="mt-10"
                 >
                     <WaitlistButton />
-                    <p className="mt-3 text-xs text-muted-foreground">30 days free. Cancel anytime.</p>
+                    <p className="mt-3 text-xs text-muted-foreground">30 days free · Cancel anytime</p>
                 </motion.div>
 
                 <motion.div

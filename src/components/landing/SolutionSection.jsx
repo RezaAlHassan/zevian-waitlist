@@ -6,20 +6,20 @@ import AIScoringAnimation from './AIScoringAnimation';
 const steps = [
     {
         number: "01",
-        label: "You set the criteria.",
-        description: "Pitch quality, objection handling, follow-up consistency. Define what good looks like for your team and weight each criterion.",
+        label: "Define what good looks like.",
+        description: "Set the criteria that matter to your motion: pitch quality, objection handling, follow-up consistency. Weight what matters most.",
         animation: "goal"
     },
     {
         number: "02",
-        label: "Your reps submit a weekly report.",
-        description: "What they worked on, what they pitched, what they struggled with. Takes five minutes. No new tools.",
+        label: "Reps submit a weekly report.",
+        description: "What they worked on. What they said. Where they struggled. It takes five minutes and fits into the tools they already use.",
         animation: "report"
     },
     {
         number: "03",
-        label: "AI scores it. You see the pattern.",
-        description: "Every report scored against your criteria, with reasoning. You see who's improving by week three. Not month five.",
+        label: "AI scores the work and tracks trajectory.",
+        description: "Every report is evaluated against your criteria. You see who's improving, who's flat, and who's slipping by week 3-4.",
         animation: "scoring"
     }
 ];

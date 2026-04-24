@@ -7,19 +7,19 @@ const testimonials = [
         initials: "UK",
         role: "Product Manager",
         firm: "200+ Person Outbound Team",
-        quote: "It would save a lot of time. Reps will also like it — they're being judged on their own work, not someone's impression of them."
+        quote: "It would save a lot of time. Reps would like it too because they're being judged on their own work, not someone's impression of them."
     },
     {
         initials: "KS",
         role: "Founder",
-        firm: "VC-Funded B2B Startup",
-        quote: "That would just make our lives easier and help us focus on other areas."
+        firm: "VC-backed B2B Startup",
+        quote: "That would make our lives easier and help us focus on other areas."
     },
     {
         initials: "AK",
         role: "Founder & B2B Sales Coach",
-        firm: "B2B Outreach Agency, 10+ Years in Sales",
-        quote: "It is incredibly difficult to find a good hire in any industry. It's only after 6 months or more you understand if they are improving — and by that time you've already lost a lot of money"
+        firm: "B2B Outreach Agency",
+        quote: "You only understand whether someone is improving after six months. By then you've already lost money."
     }
 ];
 
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
                         >
                             <div className="flex-1">
                                 <p className="text-sm text-muted-foreground leading-relaxed italic">
-                                    "{t.quote}."
+                                    "{t.quote}"
                                 </p>
                                 
                                 {t.supportingText && (

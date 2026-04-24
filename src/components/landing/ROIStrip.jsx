@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "$15–20K", label: "cost of a bad sales hire by the time you confirm it" },
-    { value: "4–6 wks", label: "to see the pattern with Zevian vs 3–6 months without" },
-    { value: "40–60×", label: "ROI vs the cost of one failed ramp" },
+    { value: "$15-20K", label: "cost of a bad hire by the time you confirm it" },
+    { value: "4-6 weeks", label: "to spot the pattern with Zevian" },
+    { value: "3-6 months", label: "to see the same pattern without it" },
+    { value: "40-60x", label: "ROI versus one failed ramp" },
 ];
 
 export default function ROIStrip() {
     return (
         <section className="px-6 py-24">
             <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
                     {metrics.map((metric, i) => (
                         <motion.div
                             key={i}
@@ -26,7 +27,7 @@ export default function ROIStrip() {
                     ))}
                 </div>
                 <p className="text-center text-xs text-muted-foreground/40 mt-10 max-w-md mx-auto">
-                    Based on $70K avg salary, 30% annual rep turnover, 4.5 months average discovery window.
+                    Illustrative estimate based on a $70K average salary, 30% annual rep turnover, and a 4.5-month average discovery window.
                 </p>
             </div>
         </section>
