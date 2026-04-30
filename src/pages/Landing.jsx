@@ -4,6 +4,7 @@ import ProblemSection from '../components/landing/ProblemSection';
 import PivotLine from '../components/landing/PivotLine';
 import SolutionSection from '../components/landing/SolutionSection';
 import ROIStrip from '../components/landing/ROIStrip';
+import BenefitLines from '../components/landing/BenefitLines';
 import TestimonialSection from '../components/landing/TestimonialSection';
 
 import CTASection from '../components/landing/CTASection';
@@ -27,6 +28,7 @@ export default function Landing() {
                     <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
                 </div>
                 <ROIStrip />
+                <BenefitLines />
                 <TestimonialSection />
 
                 <div id="waitlist">

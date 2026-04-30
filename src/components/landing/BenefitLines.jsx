@@ -1,18 +1,16 @@
 import { motion } from 'framer-motion';
 
-const paragraphs = [
-    "You hired someone. Activity looks fine. The numbers are passable. But something feels off.",
-    "The problem isn't data. It's that you can't see progress. So you wait. Month two. Month three. Month four.",
-    "By the time you're sure, you've paid the salary, burned the onboarding time, and lost what you can't get back. A bad hire costs $15–20K. Most of that cost is the wait.",
+const lines = [
+    "Know who to coach before the conversation becomes a warning.",
+    "Every score is documented. Every week. So when it matters, you have proof.",
+    "Your team gets clearer feedback. You spend less time guessing and more time developing.",
 ];
 
-
-
-export default function ProblemSection() {
+export default function BenefitLines() {
     return (
-        <section className="px-6 py-24">
+        <section className="px-6 py-20">
             <div className="max-w-3xl mx-auto space-y-8 text-center">
-                {paragraphs.map((text, i) => (
+                {lines.map((text, i) => (
                     <motion.p
                         key={i}
                         initial={{ opacity: 0, y: 16 }}

@@ -14,9 +14,9 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight"
                 >
-                   You don't find bad hires in month five.
+                   A bad hire costs $15–20K.
                     <br />
-                    <span className="text-muted-foreground font-medium">Zevian shows you by week four.</span>
+                    <span className="text-muted-foreground font-medium">Most of the cost is finding out too late.</span>
                 </motion.h1>
 
                 <motion.p
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 >
-                    AI-powered performance intelligence for outbound teams. See which reps are actually improving before the cost compounds.
+                    AI-powered performance tracking for managers who can't afford to find out late. See who's actually improving — before the cost is already paid.
                 </motion.p>
 
                 <motion.div

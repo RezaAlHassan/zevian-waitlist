@@ -15,7 +15,7 @@ export default function CTASection() {
                     You need to know who's actually getting better.
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                    Keep guessing for 3 months - or know in 4 weeks.
+                    Keep guessing for 4 months — or know in 4 weeks.
                 </p>
                 <WaitlistButton />
                 <p className="mt-3 text-xs text-muted-foreground">30 days free · Cancel anytime</p>

@@ -7,19 +7,19 @@ const steps = [
     {
         number: "01",
         label: "Define what good looks like.",
-        description: "Set the criteria that matter to your motion: pitch quality, objection handling, follow-up consistency. Weight what matters most.",
+        description: "Set the criteria that matter to your team — quality, consistency, effort, communication. Weight what matters most. You decide the standard. Zevian measures against it.",
         animation: "goal"
     },
     {
         number: "02",
-        label: "Reps submit a weekly report.",
-        description: "What they worked on. What they said. Where they struggled. It takes five minutes and fits into the tools they already use.",
+        label: "Your team submits a weekly report.",
+        description: "What they worked on. What they struggled with. Where they need help. Takes five minutes. Fits into how they already work.",
         animation: "report"
     },
     {
         number: "03",
         label: "AI scores the work and tracks trajectory.",
-        description: "Every report is evaluated against your criteria. You see who's improving, who's flat, and who's slipping by week 3-4.",
+        description: "Every report is evaluated against your criteria. You see who's improving, who's flat, and who's slipping — by week three or four. Not month four or five.",
         animation: "scoring"
     }
 ];

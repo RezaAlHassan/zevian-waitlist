@@ -1,17 +1,15 @@
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "$15-20K", label: "cost of a bad hire by the time you confirm it" },
-    { value: "4-6 weeks", label: "to spot the pattern with Zevian" },
-    { value: "3-6 months", label: "to see the same pattern without it" },
-    { value: "40-60x", label: "ROI versus one failed ramp" },
+    { value: "$15–20K", label: "cost of a bad hire by the time you're sure" },
+    { value: "4 weeks", label: "time to know instead of 4 months" },
 ];
 
 export default function ROIStrip() {
     return (
         <section className="px-6 py-24">
             <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-2xl mx-auto">
                     {metrics.map((metric, i) => (
                         <motion.div
                             key={i}
