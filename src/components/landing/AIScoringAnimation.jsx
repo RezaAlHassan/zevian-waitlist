@@ -51,7 +51,7 @@ export default function AIScoringAnimation() {
                 <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/50">
                     <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                        <span className="text-xs text-muted-foreground font-medium">AI Evaluation</span>
+                        <span className="text-xs text-muted-foreground font-medium">Performance Score</span>
                     </div>
                     <span className="text-xs text-primary font-medium">
                         {phase === 0 ? "Analyzing..." : phase === 1 ? "Scoring..." : "Complete"}
@@ -130,7 +130,7 @@ export default function AIScoringAnimation() {
                                         className="mt-3 px-3 py-2 rounded-md bg-yellow-500/10 border border-yellow-500/20"
                                     >
                                         <p className="text-xs font-semibold text-yellow-500/80 uppercase tracking-widest mb-0.5">Coaching flag</p>
-                                        <p className="text-xs text-muted-foreground leading-relaxed">Objection handling is the weak point. Rep struggles to stay on track after pricing pushback.</p>
+                                        <p className="text-xs text-muted-foreground leading-relaxed">Objection handling is the weak point. Struggles to stay on track after pricing pushback.</p>
                                     </motion.div>
                                 </>
                             )}
