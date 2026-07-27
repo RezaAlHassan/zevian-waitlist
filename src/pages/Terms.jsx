@@ -54,7 +54,7 @@ export default function Terms() {
                                 <p>Subscriptions are billed on a monthly basis. Your billing date is set when you first subscribe.</p>
                             </SubSection>
                             <SubSection title="5.3 Payment">
-                                <p>Payments are processed by our third-party payment processor, Lemon Squeezy. By subscribing, you agree to Lemon Squeezy's terms of service and authorize recurring charges.</p>
+                                <p>Payments are processed by our third-party payment processor. By subscribing, you agree to the payment processor's terms of service and authorize recurring charges.</p>
                             </SubSection>
                             <SubSection title="5.4 Automatic renewal">
                                 <p>Subscriptions renew automatically at the end of each billing cycle. You may cancel at any time before your renewal date to avoid being charged for the next period.</p>

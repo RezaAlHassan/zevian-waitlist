@@ -52,7 +52,7 @@ export default function Privacy() {
                                 </ul>
                             </SubSection>
                             <SubSection title="2.4 Billing data">
-                                <p>Payment is handled entirely by Lemon Squeezy. We do not store credit card numbers or payment details. We receive confirmation of successful transactions and subscription status only.</p>
+                                <p>Payment is handled entirely by a third-party payment processor. We do not store credit card numbers or payment details. We receive confirmation of successful transactions and subscription status only.</p>
                             </SubSection>
                         </Section>
 
@@ -103,7 +103,6 @@ export default function Privacy() {
                                             ['Google Gemini API', 'AI report scoring'],
                                             ['Netlify', 'Platform hosting'],
                                             ['Resend', 'Transactional email delivery'],
-                                            ['Lemon Squeezy', 'Payment processing'],
                                         ].map(([service, purpose]) => (
                                             <tr key={service}>
                                                 <td className="px-4 py-3 font-medium">{service}</td>
