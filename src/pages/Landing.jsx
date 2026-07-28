@@ -1,6 +1,6 @@
 import Navbar from '../components/landing/Navbar';
 import HeroSection from '../components/landing/HeroSection';
-import ProblemSection from '../components/landing/ProblemSection';
+import ProblemsSection from '../components/landing/ProblemsSection';
 import PivotLine from '../components/landing/PivotLine';
 import SolutionSection from '../components/landing/SolutionSection';
 import ROIStrip from '../components/landing/ROIStrip';
@@ -18,7 +18,7 @@ export default function Landing() {
                 <div className="max-w-4xl mx-auto">
                     <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
                 </div>
-                <ProblemSection />
+                <ProblemsSection />
                 <PivotLine />
                 <div className="max-w-4xl mx-auto">
                     <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />

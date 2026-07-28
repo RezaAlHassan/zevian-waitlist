@@ -14,9 +14,9 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight"
                 >
-                   A bad hire costs $15–20K.
+                    Catch underperformers 4x faster.
                     <br />
-                    <span className="text-muted-foreground font-medium">Most of the cost is finding out too late.</span>
+                    <span className="text-muted-foreground font-medium">Zevian tracks the numbers and the work that produced them.</span>
                 </motion.h1>
 
                 <motion.p
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 >
-                    AI-powered performance tracking for managers who can't afford to find out late. See who's actually improving — before the cost is already paid.
+                    AI-powered performance tracking for managers who can't afford to find out late. See who's actually improving, before the cost is already paid.
                 </motion.p>
 
                 <motion.div

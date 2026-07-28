@@ -66,14 +66,13 @@ export default function GoalCriteriaAnimation() {
         <div className="w-full">
             <div className="rounded-xl border border-border bg-card overflow-hidden shadow-2xl shadow-primary/5">
                 <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/50">
-                    <span className="text-xs text-muted-foreground font-medium">New Goal</span>
-                    <span className="text-xs text-primary font-medium">AI Assisted</span>
+                    <span className="text-xs text-muted-foreground font-medium">New KPI</span>
                 </div>
                 <div className="p-5 text-left space-y-4 h-[300px] overflow-hidden">
 
                     {/* Goal description input */}
                     <div>
-                        <div className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Goal Description</div>
+                        <div className="text-xs text-muted-foreground uppercase tracking-wider mb-2">KPI Description</div>
                         <div className="rounded-lg bg-secondary/60 border border-border/50 p-3 min-h-[72px]">
                             <span className="text-sm text-foreground/90 leading-relaxed">{typedText}</span>
                             {phase === 0 && (
