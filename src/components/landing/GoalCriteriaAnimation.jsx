@@ -68,18 +68,18 @@ export default function GoalCriteriaAnimation() {
                 <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/50">
                     <span className="text-xs text-muted-foreground font-medium">New KPI</span>
                 </div>
-                <div className="p-5 text-left space-y-4 h-[300px] overflow-hidden">
+                <div className="p-5 text-left h-[300px] flex flex-col">
 
-                    {/* Goal description input */}
-                    <div>
-                        <div className="text-xs text-muted-foreground uppercase tracking-wider mb-2">KPI Description</div>
-                        <div className="rounded-lg bg-secondary/60 border border-border/50 p-3 min-h-[72px]">
-                            <span className="text-sm text-foreground/90 leading-relaxed">{typedText}</span>
+                    {/* KPI description input */}
+                    <div className="shrink-0">
+                        <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1.5">KPI Description</div>
+                        <div className="rounded-lg bg-secondary/60 border border-border/50 p-2.5 min-h-[58px]">
+                            <span className="text-xs text-foreground/90 leading-relaxed">{typedText}</span>
                             {phase === 0 && (
                                 <motion.span
                                     animate={{ opacity: [1, 0] }}
                                     transition={{ repeat: Infinity, duration: 0.7 }}
-                                    className="inline-block w-0.5 h-4 bg-primary ml-0.5 align-middle"
+                                    className="inline-block w-0.5 h-3.5 bg-primary ml-0.5 align-middle"
                                 />
                             )}
                         </div>
@@ -92,14 +92,14 @@ export default function GoalCriteriaAnimation() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                className="flex items-center gap-3 py-2"
+                                className="flex items-center gap-2.5 mt-4 shrink-0"
                             >
                                 <motion.div
                                     animate={{ rotate: 360 }}
                                     transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-                                    className="w-4 h-4 border-2 border-primary/30 border-t-primary rounded-full flex-shrink-0"
+                                    className="w-3.5 h-3.5 border-2 border-primary/30 border-t-primary rounded-full flex-shrink-0"
                                 />
-                                <span className="text-xs text-primary">AI is generating scoring criteria...</span>
+                                <span className="text-[11px] text-muted-foreground">AI is generating scoring criteria...</span>
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -110,38 +110,27 @@ export default function GoalCriteriaAnimation() {
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
+                                className="mt-4 flex-1 min-h-0"
                             >
-                                <div className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Scoring Criteria</div>
-                                <div className="space-y-2">
+                                <div className="flex items-center justify-between pb-1 border-b border-border/60">
+                                    <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Scoring Criteria</span>
+                                    <span className="text-[10px] text-muted-foreground uppercase tracking-wider">Weight</span>
+                                </div>
+                                <div className="space-y-2.5 pt-2">
                                     {visibleCriteria.map((item) => (
                                         <motion.div
                                             key={item.name}
                                             initial={{ opacity: 0, y: 6 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.3 }}
-                                            className="p-3 rounded-lg bg-secondary/60 border border-border/50"
                                         >
-                                            <div className="flex items-center justify-between mb-1">
-                                                <span className="text-sm text-foreground/90 font-medium">{item.name}</span>
-                                                <motion.span
-                                                    initial={{ opacity: 0 }}
-                                                    animate={{ opacity: 1 }}
-                                                    transition={{ delay: 0.3 }}
-                                                    className="text-xs font-semibold text-primary"
-                                                >
+                                            <div className="flex items-center justify-between gap-2">
+                                                <span className="text-xs text-foreground/90 truncate">{item.name}</span>
+                                                <span className="text-[11px] font-semibold text-foreground tabular-nums shrink-0">
                                                     {item.weight}%
-                                                </motion.span>
+                                                </span>
                                             </div>
-                                            <p className="text-xs text-muted-foreground">{item.instruction}</p>
-                                            <div className="mt-2 h-1 bg-background rounded-full overflow-hidden">
-                                                <motion.div
-                                                    initial={{ width: 0 }}
-                                                    animate={{ width: `${item.weight}%` }}
-                                                    transition={{ duration: 0.5, delay: 0.2 }}
-                                                    className="h-full bg-primary rounded-full"
-                                                    style={{ maxWidth: '100%' }}
-                                                />
-                                            </div>
+                                            <p className="text-[11px] text-muted-foreground leading-snug mt-0.5">{item.instruction}</p>
                                         </motion.div>
                                     ))}
                                 </div>

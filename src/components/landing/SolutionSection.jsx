@@ -1,25 +1,25 @@
 import { motion } from 'framer-motion';
 import GoalCriteriaAnimation from './GoalCriteriaAnimation';
 import ReportWritingAnimation from './ReportWritingAnimation';
-import AIScoringAnimation from './AIScoringAnimation';
+import TrendComparisonAnimation from './TrendComparisonAnimation';
 
 const steps = [
     {
         number: "01",
-        label: "Define what good looks like.",
-        description: "Set the criteria that matter to your team — quality, consistency, effort, communication. Weight what matters most. You decide the standard. Zevian measures against it.",
+        label: "Set KPIs and define standards.",
+        description: "Define how your team should be evaluated. Zevian scores every report using those standards.",
         animation: "goal"
     },
     {
         number: "02",
-        label: "Your team submits a weekly report.",
-        description: "What they worked on. What they struggled with. Where they need help. Takes five minutes. Fits into how they already work.",
+        label: "You or your team submits weekly reports.",
+        description: "Submit work reports weekly. Zevian tracks the work and the numbers that produced them.",
         animation: "report"
     },
     {
         number: "03",
-        label: "AI scores the work and tracks trajectory.",
-        description: "Every report is evaluated against your criteria. You see who's improving, who's flat, and who's slipping — by week three or four. Not month four or five.",
+        label: "Spot patterns and trends, compare data and get insights",
+        description: "Zevian scores every report and tracks changes over time, helping you spot improvement early",
         animation: "scoring"
     }
 ];
@@ -27,7 +27,7 @@ const steps = [
 function StepAnimation({ type }) {
     if (type === "goal") return <GoalCriteriaAnimation />;
     if (type === "report") return <ReportWritingAnimation />;
-    if (type === "scoring") return <AIScoringAnimation />;
+    if (type === "scoring") return <TrendComparisonAnimation />;
     return null;
 }
 

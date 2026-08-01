@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import ReportWritingAnimation from './ReportWritingAnimation';
-import AIScoringAnimation from './AIScoringAnimation';
+import TrendComparisonAnimation from './TrendComparisonAnimation';
 import WaitlistButton from './WaitlistButton';
 
 export default function HeroSection() {
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6, delay: 0.15 }}
                     className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 >
-                    AI-powered performance tracking for managers who can't afford to find out late. See who's actually improving, before the cost is already paid.
+                    See who's improving before it costs you.
                 </motion.p>
 
                 <motion.div
@@ -45,7 +45,7 @@ export default function HeroSection() {
                     className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto"
                 >
                     <ReportWritingAnimation />
-                    <AIScoringAnimation />
+                    <TrendComparisonAnimation />
                 </motion.div>
             </div>
         </section>
