@@ -5,16 +5,16 @@ const items = [
     {
         icon: Clock3,
         eyebrow: "Evaluating someone on your team?",
-        headline: "The wait costs you",
+        headline: "Certainty takes months",
         body: "You usually know who isn't going to work out. But by the time you have enough data to act, the cost is already paid. It takes about 4 to 6 months to collect enough data on someone, whether they just joined or have been on the team for years.",
         before: { label: "Today", value: "4–6 months to know" },
-        after: { label: "With Zevian", value: "4 weeks" },
-        resolution: "Zevian tracks both qualitative and quantitative data, and cuts that wait to 4 weeks."
+        after: { label: "With Zevian", value: "Evidence in weeks" },
+        resolution: "Zevian tracks both qualitative and quantitative data, and speeds up decision making with evidence in weeks."
     },
     {
         icon: ScrollText,
         eyebrow: "Running reviews?",
-        headline: "Memory isn't proof",
+        headline: "Reviews need evidence",
         body: "There's no record of how the work changed week to week. So the decision comes from memory, and memory favors whoever was loudest lately, in the room or in Slack.",
         before: { label: "Today", value: "Recall and impressions" },
         after: { label: "With Zevian", value: "A week-by-week record" },
@@ -35,10 +35,10 @@ export default function ProblemsSection() {
                 >
                     <p className="text-xs font-semibold text-primary tracking-widest uppercase mb-4">Why Zevian</p>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
-                        The gap your dialler leaves.
+                        The gap in what you track.
                     </h2>
                     <p className="mt-5 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                        It counts calls. It can't tell you who is actually getting better.
+                        You have the numbers. What you don't have is how the work behind them is changing.
                     </p>
                 </motion.div>
 
