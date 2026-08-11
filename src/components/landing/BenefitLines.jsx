@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 const lines = [
     "Know who to coach before the conversation becomes a warning.",
-    "Every score is documented. Every week. So when it matters, you have proof.",
-    "Your team gets clearer feedback. You spend less time guessing and more time developing.",
+    "Every score is written down, every week. You have proof when you need it.",
+    "Your team gets clearer feedback. You spend your time developing people.",
 ];
 
 export default function BenefitLines() {

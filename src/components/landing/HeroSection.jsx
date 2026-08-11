@@ -14,16 +14,16 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight"
                 >
-                    Catch underperformers 4x faster.
+                    Your numbers look fine for 90 days.
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.15 }}
-                    className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+                    className="mt-5 text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground max-w-2xl mx-auto leading-snug tracking-tight"
                 >
-                    Zevian tracks the numbers and the work that produced them, so you see who's improving and where, with evidence you can trust.
+                    Zevian scores the work behind them every week.
                 </motion.p>
 
                 <motion.div

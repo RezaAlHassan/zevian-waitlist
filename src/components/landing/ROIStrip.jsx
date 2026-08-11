@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "$15–20K", label: "cost of a bad hire by the time you're sure" },
-    { value: "4 weeks", label: "time to know instead of 4 months" },
+    { value: "$15–20K", label: "spent before a bad hire is obvious" },
+    { value: "60–90 days", label: "before work quality shows up in the numbers" },
 ];
 
 export default function ROIStrip() {
@@ -25,7 +25,7 @@ export default function ROIStrip() {
                     ))}
                 </div>
                 <p className="text-center text-xs text-muted-foreground/40 mt-10 max-w-md mx-auto">
-                    Illustrative estimate based on a $70K average salary, 30% annual rep turnover, and a 4.5-month average discovery window.
+                    Illustrative estimate based on a $70K average rep salary.
                 </p>
             </div>
         </section>

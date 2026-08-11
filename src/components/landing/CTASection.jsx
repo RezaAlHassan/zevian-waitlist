@@ -12,10 +12,10 @@ export default function CTASection() {
                 className="max-w-xl mx-auto text-center"
             >
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-                    You need to know who's actually getting better.
+                    You need to know who's getting better.
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                    Keep guessing for 4 months — or know in 4 weeks.
+                    Zevian scores your team's work every week, so you see improvement while coaching still changes it.
                 </p>
                 <WaitlistButton />
                 <p className="mt-3 text-xs text-muted-foreground">30 days free · Cancel anytime</p>

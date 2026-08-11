@@ -5,20 +5,20 @@ const items = [
     {
         icon: Clock3,
         eyebrow: "Evaluating someone on your team?",
-        headline: "Certainty takes months",
-        body: "You usually know who isn't going to work out. But by the time you have enough data to act, the cost is already paid. It takes about 4 to 6 months to collect enough data on someone, whether they just joined or have been on the team for years.",
-        before: { label: "Today", value: "4–6 months to know" },
-        after: { label: "With Zevian", value: "Evidence in weeks" },
-        resolution: "Zevian tracks both qualitative and quantitative data, and speeds up decision making with evidence in weeks."
+        headline: "Quality shows up late",
+        body: "Activity numbers reach your dashboard the same week. The quality of the work behind them takes 60 to 90 days to show. By then a deal has usually died for a reason you could have seen in week two, and the salary is spent.",
+        before: { label: "Today", value: "Visible at day 60–90" },
+        after: { label: "With Zevian", value: "Scored every week" },
+        resolution: "Zevian scores the work every week, so you see the problem before it reaches the numbers."
     },
     {
         icon: ScrollText,
         eyebrow: "Running reviews?",
         headline: "Reviews need evidence",
-        body: "There's no record of how the work changed week to week. So the decision comes from memory, and memory favors whoever was loudest lately, in the room or in Slack.",
-        before: { label: "Today", value: "Recall and impressions" },
-        after: { label: "With Zevian", value: "A week-by-week record" },
-        resolution: "Zevian gives both sides a defensible record, so review pushback goes away."
+        body: "Week-to-week changes in the work stay in your head. So the review rests on what you remember, and you remember whoever spoke up most.",
+        before: { label: "Today", value: "What you remember" },
+        after: { label: "With Zevian", value: "A written weekly record" },
+        resolution: "Zevian gives both sides a documented record, so reviews hold up."
     },
 ];
 
@@ -37,8 +37,8 @@ export default function ProblemsSection() {
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
                         The gap in what you track.
                     </h2>
-                    <p className="mt-5 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                        You have the numbers. What you don't have is how the work behind them is changing.
+                    <p className="mt-4 text-lg md:text-xl lg:text-2xl font-medium text-muted-foreground max-w-2xl mx-auto leading-snug tracking-tight">
+                        You have the numbers. The work that produced them stays out of view.
                     </p>
                 </motion.div>
 

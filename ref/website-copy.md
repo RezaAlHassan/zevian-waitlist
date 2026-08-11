@@ -3,8 +3,8 @@
 Two landing variants, one per outbound angle. Section headings map to the real
 components in `src/components/landing/`.
 
-- **Channel A — Ramp cost.** Track 1: SDR managers, 15–100 reps, actively hiring.
-  Lands traffic from the "Ramp cost" D1 / "Detection lag" D4 emails.
+- **Channel A — Timing gap.** Track 1: SDR managers, 15–100 reps, actively hiring.
+  Lands traffic from the "Timing gap" D1 / "Detection lag" D4 emails.
 - **Channel B — Reporting gap.** Mid-to-large orgs, 100+ employees, BDM and
   team-manager roles (not HR). Lands traffic from the "Reporting gap" D1 /
   "Coaching evidence" D4 emails.
@@ -14,36 +14,40 @@ lives on its own route so the reporting-gap emails land on matching copy.
 
 ---
 
-# Channel A — Ramp cost
+# Channel A — Timing gap
 
 Route: `/` (default)
-Title tag: `Zevian — see which reps are actually ramping`
-Meta description: `Weekly AI-scored performance tracking for SDR managers. Know who's improving by week three, not month four.`
+Title tag: `Zevian — see the work behind your numbers`
+Meta description: `Weekly AI-scored performance tracking for SDR managers. Zevian scores the work behind your activity numbers every week.`
+
+**Angle:** managers already track the numbers. Whether the work behind those
+numbers is improving takes 60 to 90 days to show, by which point the salary is
+spent. Zevian scores that work weekly, so the problem appears before it reaches
+the numbers. Lead with the timing gap. Lead with a specific outcome number
+nowhere.
 
 ## HeroSection
 
-**H1 (line 1, bold):**
-Your dashboard shows dials.
-
-**H1 (line 2, muted):**
-It doesn't show whether the rep is getting better.
+**H1:**
+Your numbers look fine for 90 days.
 
 **Subhead:**
-Zevian scores the work behind the activity, every week. You see who's ramping
-and who's stalling by week three — not day 90, when the salary is already spent.
+Zevian scores the work behind them every week.
+
+> The hook sets up the timing gap; the ProblemSection explains it. Keep the
+> dials/meetings setup and the 60-to-90-day mechanics out of the hero — they
+> live in ProblemSection and reading them twice weakens both.
 
 **Button microcopy:** 30 days free · Cancel anytime
 
 ## ProblemSection
 
-1. You're already tracking dials, meetings booked, pipeline touched. Every one of
-   those numbers can look fine while the rep underneath them isn't getting better.
-2. Quality shows up late. Usually 60 to 90 days in, when a deal dies for a reason
-   you could have caught in week two. So you wait, and hope next month reads
-   differently.
-3. An average new rep reaches full productivity at 5.3 months. If they leave
-   around six, the whole investment is gone — salary, ramp time, and the pipeline
-   they never built.
+1. Activity numbers reach your dashboard the same week. The quality of the work
+   behind them takes 60 to 90 days to show.
+2. By then a deal has usually died for a reason you could have seen in week two,
+   and the salary is spent.
+3. An average new rep reaches full productivity at 5.3 months. A departure around
+   six takes the whole investment with it.
 
 ## PivotLine
 
@@ -51,38 +55,36 @@ Your dialer tracks activity. Zevian tracks improvement.
 
 ## SolutionSection
 
-**Step 01 — Define what good looks like for a rep.**
-Set the criteria you'd actually coach on: discovery quality, objection handling,
-follow-up discipline, call prep. Weight what matters most on your team. You set
-the bar. Zevian measures against it.
+**Step 01 — Set your KPIs and standards.**
+Set the standards your team is measured against: discovery quality, objection
+handling, follow-up discipline, call prep. Zevian scores every report against
+them.
 
-**Step 02 — Reps submit a weekly report.**
-What they worked, what stalled, where they got stuck. Five minutes at the end of
-the week. No new dashboard to live in, no manager chasing.
+**Step 02 — Your team submits a weekly report.**
+What they worked, what stalled, where they got stuck. Each report takes five
+minutes. Zevian tracks the work and the numbers behind it.
 
-**Step 03 — AI scores the work and tracks the ramp.**
-Every report is scored against your criteria. You see who's climbing, who's flat,
-and who's sliding by week three or four — while coaching still changes the
-outcome.
+**Step 03 — See who's improving and who's stalling.**
+Zevian scores every report and tracks the change week to week, while coaching
+still changes the outcome.
 
 ## ROIStrip
 
 | Value | Label |
 |---|---|
-| **5.3 months** | average time for a new rep to reach full productivity |
-| **Week 3** | when you see the trajectory, instead of month four |
+| **$15–20K** | spent before a bad hire is obvious |
+| **60–90 days** | before work quality shows up in the numbers |
 
-**Footnote:** Ramp figure from ForEntrepreneurs SaaS benchmarks. Cost exposure
-estimated on a $70K average rep salary.
+**Footnote:** Illustrative estimate based on a $70K average rep salary.
 
-> Alternate first metric if you'd rather keep the money framing: **$15–20K** /
-> "spent before a bad hire is obvious."
+> Alternate metric if you'd rather lead with ramp: **5.3 months** / "average time
+> for a new rep to reach full productivity" (ForEntrepreneurs SaaS benchmarks).
 
 ## BenefitLines
 
-- Coach on evidence, not on the last call you happened to sit in on.
-- Every week is written down, so the same conversation doesn't happen twice.
-- Reps see the same scores you do. The bar stops being a mystery.
+- Know who to coach before the conversation becomes a warning.
+- Every score is written down, every week. You have proof when you need it.
+- Reps see the same scores you do. They know where the bar sits.
 
 ## TestimonialSection
 
@@ -97,10 +99,10 @@ Order: KS, UK, **AK (featured)**.
 
 ## CTASection
 
-**H2:** Find out in week three, not month four.
+**H2:** You need to know who's getting better.
 
-**Sub:** I'm doing onboarding myself right now, so I can only take on a couple of
-new teams at a time.
+**Sub:** Zevian scores your team's work every week, so you see improvement while
+coaching still changes it.
 
 **Button microcopy:** 30 days free · Cancel anytime
 
@@ -193,13 +195,16 @@ Order: KS, AK, **UK (featured)**.
 
 # Notes
 
-**Claims to keep attributed.** Three numbers appear on-page: 5.3-month ramp
-(ForEntrepreneurs), 40% appraisal distortion (SHRM), and $15–20K bad-hire cost
-(your own estimate, already footnoted). Each stays in a footnote under the metric
-it supports. The "4x faster at catching underperformers" line from the ramp-cost
-email is a single pilot team's report — it works in a 1:1 email but shouldn't
-become an unattributed site-wide claim. If you want it on the page, run it as a
-quoted testimonial from that team.
+**Outcome claims are off the page.** "Ramp cost reduced to 3 weeks" and
+"underperformer detection 4x faster" are a single pilot team's report, unvalidated
+by a customer. They stay out of website copy and email copy entirely. If that
+team will attach their name to it, it runs as a quoted testimonial from them and
+nowhere else.
+
+**Claims to keep attributed.** Numbers that appear on-page describe the problem,
+never the result: 60-to-90-day quality lag, $15–20K bad-hire cost (own estimate),
+5.3-month ramp (ForEntrepreneurs), 40% appraisal distortion (SHRM). Each stays in
+a footnote under the metric it supports.
 
 **Shared across both variants, unchanged:** Navbar, WaitlistButton, the three
 animations, footer, `/privacy`, `/terms`.

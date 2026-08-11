@@ -6,20 +6,20 @@ import TrendComparisonAnimation from './TrendComparisonAnimation';
 const steps = [
     {
         number: "01",
-        label: "Set KPIs and define standards.",
-        description: "Define how your team should be evaluated. Zevian scores every report using those standards.",
+        label: "Set your KPIs and standards.",
+        description: "Set the standards your team is measured against. Zevian scores every report against them.",
         animation: "goal"
     },
     {
         number: "02",
-        label: "You or your team submits weekly reports.",
-        description: "Submit work reports weekly. Zevian tracks the work and the numbers that produced them.",
+        label: "Your team submits a weekly report.",
+        description: "Each report takes five minutes. Zevian tracks the work and the numbers behind it.",
         animation: "report"
     },
     {
         number: "03",
-        label: "Spot patterns and trends, compare data and get insights",
-        description: "Zevian scores every report and tracks changes over time, helping you spot improvement early",
+        label: "See who's improving and who's stalling.",
+        description: "Zevian scores every report and tracks the change week to week.",
         animation: "scoring"
     }
 ];
