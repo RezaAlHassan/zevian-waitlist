@@ -66,13 +66,13 @@ export default function GoalCriteriaAnimation() {
         <div className="w-full">
             <div className="rounded-xl border border-border bg-card overflow-hidden shadow-2xl shadow-primary/5">
                 <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/50">
-                    <span className="text-xs text-muted-foreground font-medium">New KPI</span>
+                    <span className="text-xs text-muted-foreground font-medium">Standards</span>
                 </div>
                 <div className="p-5 text-left h-[300px] flex flex-col">
 
                     {/* KPI description input */}
                     <div className="shrink-0">
-                        <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1.5">KPI Description</div>
+                        <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1.5">Team standard</div>
                         <div className="rounded-lg bg-secondary/60 border border-border/50 p-2.5 min-h-[58px]">
                             <span className="text-xs text-foreground/90 leading-relaxed">{typedText}</span>
                             {phase === 0 && (

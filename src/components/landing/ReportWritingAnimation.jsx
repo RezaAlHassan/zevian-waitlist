@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FileSpreadsheet, Check } from 'lucide-react';
 
 const reportLines = [
-    "Lost two deals on pricing, didn't handle the objection well.",
+    "Lost two deals on pricing. The objection was acknowledged, but not resolved.",
     "Need help tightening the pitch for mid-market prospects."
 ];
 
@@ -36,15 +36,15 @@ export default function ReportWritingAnimation() {
                 setCharIndex(charIndex + 1);
             }, 25);
             return () => clearTimeout(timeout);
-        } else {
-            const timeout = setTimeout(() => {
-                setVisibleLines(prev => [...prev, reportLines[lineIndex]]);
-                setCurrentTyping("");
-                setLineIndex(lineIndex + 1);
-                setCharIndex(0);
-            }, 400);
-            return () => clearTimeout(timeout);
         }
+
+        const timeout = setTimeout(() => {
+            setVisibleLines(prev => [...prev, reportLines[lineIndex]]);
+            setCurrentTyping("");
+            setLineIndex(lineIndex + 1);
+            setCharIndex(0);
+        }, 400);
+        return () => clearTimeout(timeout);
     }, [lineIndex, charIndex]);
 
     return (
@@ -54,10 +54,9 @@ export default function ReportWritingAnimation() {
                     <div className="w-3 h-3 rounded-full bg-red-500/60" />
                     <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
                     <div className="w-3 h-3 rounded-full bg-green-500/60" />
-                    <span className="ml-2 text-xs text-muted-foreground font-medium">Weekly Report · Mar 15, 2026</span>
+                    <span className="ml-2 text-xs text-muted-foreground font-medium">Weekly Report &middot; Mar 15, 2026</span>
                 </div>
                 <div className="p-5 h-[300px] flex flex-col text-left">
-                    {/* Written notes */}
                     <div className="flex-1 min-h-0 overflow-hidden space-y-2">
                         <AnimatePresence>
                             {visibleLines.map((line, i) => (
@@ -67,14 +66,14 @@ export default function ReportWritingAnimation() {
                                     animate={{ opacity: 1, y: 0 }}
                                     className="text-sm text-foreground/80 leading-relaxed"
                                 >
-                                    <span className="text-muted-foreground mr-2">•</span>
+                                    <span className="text-muted-foreground mr-2">&bull;</span>
                                     {line}
                                 </motion.div>
                             ))}
                         </AnimatePresence>
                         {currentTyping && (
                             <div className="text-sm text-foreground/80 leading-relaxed">
-                                <span className="text-muted-foreground mr-2">•</span>
+                                <span className="text-muted-foreground mr-2">&bull;</span>
                                 {currentTyping}
                                 <motion.span
                                     animate={{ opacity: [1, 0] }}
@@ -85,7 +84,6 @@ export default function ReportWritingAnimation() {
                         )}
                     </div>
 
-                    {/* Attached spreadsheet */}
                     <div className="shrink-0 mt-4 rounded-lg border border-border/60 bg-secondary/40 p-3">
                         <div className="flex items-center gap-2.5">
                             <FileSpreadsheet className="w-4 h-4 text-primary shrink-0" />

@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const testimonials = [
     {
-        initials: "UK",
+        initials: "PM",
         role: "Product Manager",
-        firm: "200+ Person Outbound Team",
+        firm: "200+ person outbound team",
         quote: "It would save a lot of time. Reps would like it too because they're being judged on their own work, not someone's impression of them."
     },
     {
-        initials: "KS",
+        initials: "FS",
         role: "Founder",
-        firm: "VC-backed B2B Startup",
+        firm: "VC-backed B2B startup",
         quote: "That would make our lives easier and help us focus on other areas."
     },
     {
-        initials: "AK",
+        initials: "SC",
         role: "Founder & B2B Sales Coach",
-        firm: "B2B Outreach Agency",
+        firm: "B2B outreach agency",
         quote: "You only understand whether someone is improving after six months. By then you've already lost money."
     }
 ];
@@ -27,33 +27,32 @@ export default function TestimonialsSection() {
     return (
         <section className="px-6 py-24">
             <div className="max-w-6xl mx-auto">
+                <div className="max-w-3xl mx-auto text-center mb-14">
+                    <p className="text-xs font-semibold text-primary tracking-widest uppercase mb-4">Social proof</p>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
+                        What managers told us
+                    </h2>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.map((t, i) => (
                         <motion.div
-                            key={i}
+                            key={t.quote}
                             initial={{ opacity: 0, y: 16 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                             className={cn(
                                 "flex flex-col text-center p-6 rounded-xl border transition-all duration-300",
-                                i === testimonials.length - 1 
-                                    ? "bg-primary/5 border-primary/20 shadow-lg shadow-primary/5 scale-105 z-10" 
+                                i === testimonials.length - 1
+                                    ? "bg-primary/5 border-primary/20 shadow-lg shadow-primary/5 scale-105 z-10"
                                     : "border-border/50 bg-card/50"
                             )}
                         >
                             <div className="flex-1">
                                 <p className="text-sm text-muted-foreground leading-relaxed italic">
-                                    "{t.quote}"
+                                    &ldquo;{t.quote}&rdquo;
                                 </p>
-                                
-                                {t.supportingText && (
-                                    <div className="mt-6 p-3 rounded-md bg-primary/10 border border-primary/20">
-                                        <p className="text-xs font-medium text-primary leading-relaxed">
-                                            {t.supportingText}
-                                        </p>
-                                    </div>
-                                )}
                             </div>
 
                             <div className="mt-8 pt-4 border-t border-border/10 flex flex-col items-center gap-2">
